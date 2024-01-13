@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ES5
+        // function f1(){
+        //     var x=1;
+        //     if(x==1){
+        //         var x=2;
+        //         console.log(x);
+        //     }
+        //     console.log(x)
+        // }
+        // f1();
+        // function f1(){
+        //     let x=1;
+        //     if(x==1){
+        //         let x=2;
+        //         console.log(x);
+        //     }
+        //     console.log( x);
+        // }
+        // f1()
+        // const y=12.36
+        // console.log(y);
+        // y=23;
+        // console.log(y);
+
+        //We can change value of an object even after defined constant
+            // const emp={
+            //     name:"Bharat Tulsani",
+            //     mob:7408863902
+            // }
+            // console.log(emp.name);
+            // emp.name="Ruchita"
+            // console.log(emp.name)
+            // console.log( emp);
+
+            //We can change value of an array even after defined constant
+            const courses=["Angular","React Js","Vue JS","Express.js","Node.js"]
+            console.log(courses[1]);
+            courses[1]="Next JS";
+            console.log(courses[1]);
+            console.log(courses);
+   </script>
+</body>
+</html>
