@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Base/Super/Parent Class
+        class A{
+            constructor(){
+                console.log(`I am class A constructor`);
+            }
+            m1(){
+                console.log('I am method m1 of class A');
+            }
+        }
+        class B extends A{
+            constructor(){
+                super();
+                console.log(`I am class B constructor`);
+            }
+            m2(){
+                console.log('I am method m2 of class B');
+            }
+        }
+        let obj=new B();
+        obj.m1();
+        obj.m2();
+    </script>
+</body>
+</html>

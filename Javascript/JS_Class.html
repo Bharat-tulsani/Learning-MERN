@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Class Creation
+        class MyClass{
+
+            //constructor creation
+            // constructor(){
+            //     console.log("I am a constructor");
+            // }
+
+            //Parameterised Constructor
+            //Note: We can Call 1 constuctor at a time in JS
+            constructor(fnm,lnm){
+                console.log(`Hello Mr ${fnm} ${lnm}`);
+            }
+            //Method Creation
+            show(nm){
+                console.log(`Hello Mr ${nm}`);
+            }
+        }
+        //Class Object Creation
+        let obj=new MyClass("Bharat", "Tulsani");
+        obj.show("Raj")
+    </script>
+</body>
+</html>

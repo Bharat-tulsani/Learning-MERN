@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sortCourses(...courses){
+            return courses.sort();
+        }
+        // console.log(sortCourses("NODEJS","Express.js","Angular.js","Vue.js"));
+        // console.log(sortCourses("REACT","ANGULAR"));
+        // console.log(sortCourses("MERN"));
+
+        function myFun(a,b,...args){
+            console.log(`a: ${a}`);
+            console.log(`b: ${b}`);
+            console.log(`args:${args}`);
+            for (var i in args){
+                console.log(`args[${i}] :${args[i]}`);
+            }
+        }
+        myFun("NODEJS","ReactJS","angular","NextJS","Vue.js")
+    </script>
+</body>
+</html>
